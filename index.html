@@ -39,14 +39,15 @@ footer{text-align:center;padding:20px;background:black;}
 
 <div class="profile">
  <div class="profile" style="
-    width:250px;             /* taille du cercle */
-    height:250px;
+    width:300px;      /* largeur de l'ovale */
+    height:200px;     /* hauteur de l'ovale */
     margin:auto;
-    border-radius:50%;        /* cercle parfait */
+    overflow:hidden;
+    border-radius:50% / 50%;  /* transforme le cercle en ovale */
     border:4px solid white;
     background-image: url('Picture (1).png');
-    background-size: cover;   /* remplit le cercle */
-    background-position: center; /* centre la photo */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 "></div>
 </div>
