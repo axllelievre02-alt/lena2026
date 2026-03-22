@@ -3,170 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lena Yin 2026</title>
+<title>Lena Yin 2026 - Accueil</title>
+<link rel="icon" href="https://via.placeholder.com/32" type="image/png">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-}
-
-/* NAVBAR */
-nav {
-  position: sticky;
-  top: 0;
-  background: rgba(0,0,0,0.8);
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 15px;
-  z-index: 1000;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #f7c600;
-}
-
-/* HEADER */
-header {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(90deg, #f7c600, #7b2cbf);
-}
-
-header h1 {
-  font-size: 40px;
-}
-
-header p {
-  margin-top: 10px;
-}
-
-/* IMAGE */
-.profile {
-  text-align: center;
-  margin-top: -40px;
-}
-
-.profile img {
-  width: 150px;
-  border-radius: 50%;
-  border: 4px solid white;
-}
-
-/* SECTIONS */
-section {
-  padding: 40px 20px;
-  margin: 20px;
-  background: #1e293b;
-  border-radius: 15px;
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-}
-
-/* CARDS */
-.card {
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.yellow { background: #f7c600; }
-.red { background: #d62828; }
-.orange { background: #f77f00; }
-.purple { background: #7b2cbf; }
-.blue { background: #3a86ff; }
-
-/* CONTACT */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-}
-
-button {
-  padding: 10px;
-  background: #f7c600;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #ffd60a;
-}
-
-/* ANIMATION */
-.fade {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 0.8s;
-}
-
-.fade.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: black;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 26px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-  }
-}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial,sans-serif; background:#0f172a; color:white; }
+nav { position: sticky; top:0; background: rgba(0,0,0,0.9); display:flex; justify-content:center; gap:20px; padding:15px; z-index:1000; }
+nav a { color:white; text-decoration:none; font-weight:bold; transition:0.3s; }
+nav a:hover { color:#f7c600; }
+header { text-align:center; padding:60px 20px; background:linear-gradient(90deg,#f7c600,#7b2cbf); }
+header h1{ font-size:40px; }
+header p{ margin-top:10px; font-size:18px; }
+.profile{ text-align:center; margin-top:-40px; }
+.profile img{ width:150px; border-radius:50%; border:4px solid white; }
+section{ padding:40px 20px; margin:20px auto; max-width:1000px; background:#1e293b; border-radius:15px; }
+.fade{ opacity:0; transform:translateY(30px); transition:0.8s; }
+.fade.visible{ opacity:1; transform:translateY(0); }
+footer{ text-align:center; padding:20px; background:black; }
+footer a{ color:#f7c600; margin:0 10px; text-decoration:none; }
+footer a:hover{ color:#ffd60a; }
 </style>
-
 </head>
-
 <body>
 
-<!-- MENU -->
+<!-- NAVBAR -->
 <nav>
-  <a href="#about">Qui suis-je</a>
-  <a href="#values">Valeurs</a>
-  <a href="#priorities">Priorités</a>
-  <a href="#contact">Contact</a>
+  <a href="index.html">Accueil</a>
+  <a href="valeurs.html">Valeurs</a>
+  <a href="priorites.html">Priorités</a>
+  <a href="vision.html">Vision</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
 <!-- HEADER -->
@@ -181,75 +48,24 @@ footer {
 </div>
 
 <!-- QUI SUIS-JE -->
-<section id="about" class="fade">
+<section class="fade">
   <h2>👤 Qui suis-je ?</h2>
   <p>Je m'appelle Lena Yin, 35 ans.</p>
   <p>Engagée pour Orléans, je souhaite améliorer concrètement la vie des habitants.</p>
 </section>
 
-<!-- VALEURS -->
-<section id="values" class="fade">
-  <h2>🤝 Nos valeurs</h2>
-  <ul>
-    <li>Justice sociale</li>
-    <li>Solidarité</li>
-    <li>Égalité</li>
-    <li>Féminisme</li>
-    <li>Lutte contre les discriminations</li>
-  </ul>
-</section>
-
-<!-- PRIORITÉS -->
-<section id="priorities" class="fade">
-  <h2>🏙️ Nos priorités</h2>
-  <div class="grid">
-    <div class="card yellow">Logement</div>
-    <div class="card red">Égalité</div>
-    <div class="card orange">Jeunesse</div>
-    <div class="card purple">Santé</div>
-    <div class="card blue">Services publics</div>
-  </div>
-</section>
-
-<!-- VISION -->
-<section class="fade">
-  <h2>🌍 Une ville plus juste</h2>
-  <p>Construisons une ville inclusive où chacun a sa place.</p>
-</section>
-
-<!-- CONFIANCE -->
-<section class="fade">
-  <h2>💬 Pourquoi me faire confiance ?</h2>
-  <p>Une citoyenne engagée, proche du terrain et déterminée.</p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="fade">
-  <h2>📩 Contact</h2>
-  <form>
-    <input type="text" placeholder="Votre nom">
-    <input type="email" placeholder="Votre email">
-    <textarea placeholder="Votre message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
-
-<!-- FOOTER -->
 <footer>
   <p>Unissons-nous pour faire avancer Orléans !</p>
+  <div>
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+  </div>
 </footer>
 
 <script>
-const elements = document.querySelectorAll('.fade');
-
-window.addEventListener('scroll', () => {
-  elements.forEach(el => {
-    const position = el.getBoundingClientRect().top;
-    if(position < window.innerHeight - 50) {
-      el.classList.add('visible');
-    }
-  });
-});
+const elements=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{elements.forEach(el=>{const pos=el.getBoundingClientRect().top;if(pos<window.innerHeight-50){el.classList.add('visible');}});});
 </script>
 
 </body>
