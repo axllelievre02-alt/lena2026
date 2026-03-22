@@ -1,58 +1,15 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lena Yin 2026 - Vision</title>
-<link rel="icon" href="https://via.placeholder.com/32" type="image/png">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:Arial,sans-serif;background:#0f172a;color:white;}
-nav{position:sticky;top:0;background:rgba(0,0,0,0.9);display:flex;justify-content:center;gap:20px;padding:15px;z-index:1000;}
-nav a{color:white;text-decoration:none;font-weight:bold;transition:0.3s;}
-nav a:hover{color:#f7c600;}
-section{padding:40px 20px;margin:20px auto;max-width:1000px;background:#1e293b;border-radius:15px;}
-.fade{opacity:0;transform:translateY(30px);transition:0.8s;}
-.fade.visible{opacity:1;transform:translateY(0);}
-footer{text-align:center;padding:20px;background:black;}
-footer a{color:#f7c600;margin:0 10px;text-decoration:none;}
-footer a:hover{color:#ffd60a;}
-</style>
-</head>
-<body>
-
-<nav>
-  <a href="index.html">Accueil</a>
-  <a href="valeurs.html">Valeurs</a>
-  <a href="priorites.html">Priorités</a>
-  <a href="vision.html">Vision</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
 <section class="fade">
   <h2>🌍 Une ville plus juste</h2>
-  <p>Construisons une ville inclusive où chacun a sa place.</p>
+  <p>Ma vision pour Orléans est claire : construire une ville où chacun se sent chez soi.</p>
+  <p>Je veux promouvoir un environnement durable, avec des espaces verts, des transports propres et accessibles, et des quartiers vivants et sécurisés.</p>
 </section>
 
 <section class="fade">
   <h2>💬 Pourquoi me faire confiance ?</h2>
-  <p>Une citoyenne engagée, proche du terrain et déterminée.</p>
+  <ul>
+    <li>Une citoyenne proche du terrain, à l’écoute des habitants.</li>
+    <li>Une expérience concrète dans l’accompagnement social et éducatif.</li>
+    <li>Une volonté de transparence et de dialogue permanent.</li>
+    <li>Des projets concrets et réalisables pour chaque quartier.</li>
+  </ul>
 </section>
-
-<footer>
-  <p>Unissons-nous pour faire avancer Orléans !</p>
-</footer>
-
-<script>
-const elements=document.querySelectorAll('.fade');
-window.addEventListener('scroll',()=>{
-  elements.forEach(el=>{
-    const pos=el.getBoundingClientRect().top;
-    if(pos<window.innerHeight-50){ el.classList.add('visible'); }
-  });
-});
-</script>
-
-</body>
-</html>
