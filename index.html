@@ -1,96 +1,17 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lena Yin 2026 - Accueil</title>
-<link rel="icon" href="https://via.placeholder.com/32" type="image/png">
-
-<style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: Arial,sans-serif; background:#0f172a; color:white; }
-
-/* NAVBAR */
-nav { position: sticky; top:0; background: rgba(0,0,0,0.9); display:flex; justify-content:center; gap:20px; padding:15px; z-index:1000; }
-nav a { color:white; text-decoration:none; font-weight:bold; transition:0.3s; }
-nav a:hover { color:#f7c600; }
-
-/* HEADER */
-header { text-align:center; padding:60px 20px; background:linear-gradient(90deg,#f7c600,#7b2cbf); }
-header h1{ font-size:40px; }
-header p{ margin-top:10px; font-size:18px; }
-
-/* PHOTO */
-.profile{ text-align:center; margin-top:-40px; }
-.profile img{ width:150px; border-radius:50%; border:4px solid white; }
-
-/* SECTIONS */
-section{ padding:40px 20px; margin:20px auto; max-width:1000px; background:#1e293b; border-radius:15px; }
-
-/* ANIMATION */
-.fade{ opacity:0; transform:translateY(30px); transition:0.8s; }
-.fade.visible{ opacity:1; transform:translateY(0); }
-
-/* FOOTER */
-footer{ text-align:center; padding:20px; background:black; }
-footer a{ color:#f7c600; margin:0 10px; text-decoration:none; }
-footer a:hover{ color:#ffd60a; }
-
-/* MOBILE */
-@media (max-width:600px){
-  header h1{ font-size:26px; }
-  nav{ flex-wrap:wrap; }
-}
-</style>
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-<nav>
-  <a href="index.html">Accueil</a>
-  <a href="#">Valeurs</a>
-  <a href="#">Priorités</a>
-  <a href="#">Vision</a>
-  <a href="#">Contact</a>
-</nav>
-
-<!-- HEADER -->
-<header>
-  <h1>Lena Yin 2026</h1>
-  <p>Candidature aux élections municipales d'Orléans</p>
-</header>
-
-<!-- PHOTO -->
-<div class="profile">
-  <img src="https://via.placeholder.com/150" alt="Lena Yin">
-</div>
-
-<!-- QUI SUIS-JE -->
 <section class="fade">
   <h2>👤 Qui suis-je ?</h2>
-  <p>Je m'appelle Lena Yin, 35 ans.</p>
-  <p>Engagée pour Orléans, je souhaite améliorer concrètement la vie des habitants.</p>
+  <p>Je m'appelle Lena Yin, 35 ans, habitante d'Orléans depuis toujours.</p>
+  <p>Engagée dans la vie locale, je crois en une politique proche des citoyens, transparente et efficace.</p>
+  <p>Mon objectif : rendre notre ville plus inclusive, durable et solidaire, en écoutant chaque habitant.</p>
+  <p>Je me bats pour des projets concrets dans le logement, l’éducation, la santé et les services publics.</p>
 </section>
 
-<footer>
-  <p>Unissons-nous pour faire avancer Orléans !</p>
-  <div>
-    <a href="https://facebook.com" target="_blank">Facebook</a>
-    <a href="https://twitter.com" target="_blank">Twitter</a>
-    <a href="https://instagram.com" target="_blank">Instagram</a>
-  </div>
-</footer>
-
-<script>
-const elements=document.querySelectorAll('.fade');
-window.addEventListener('scroll',()=>{
-  elements.forEach(el=>{
-    const pos=el.getBoundingClientRect().top;
-    if(pos<window.innerHeight-50){ el.classList.add('visible'); }
-  });
-});
-</script>
-
-</body>
-</html>
+<section class="fade">
+  <h2>🎯 Mon engagement</h2>
+  <ul>
+    <li>Être à l'écoute de tous les quartiers</li>
+    <li>Favoriser la participation citoyenne</li>
+    <li>Soutenir les initiatives locales et associatives</li>
+    <li>Promouvoir l'égalité et la justice sociale</li>
+  </ul>
+</section>
